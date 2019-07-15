@@ -16,7 +16,7 @@ module RIO.Yesod
   )
 where
 
-import           RIO
+import           RIO                     hiding ( Handler )
 import           Conduit                 hiding ( throwM )
 import           Yesod                   hiding ( Header
                                                 , LogLevel(..)
