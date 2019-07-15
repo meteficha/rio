@@ -11,6 +11,7 @@ module RIO.Yesod
   , module Yesod.Feed
   , module Network.HTTP.Client.Conduit
   , module Network.HTTP.Types
+  , module Data.Default
   , module Database.Persist.Sql
   )
 where
@@ -36,6 +37,7 @@ import           Yesod.Feed
 import           Network.HTTP.Client.Conduit
                                          hiding ( Proxy )
 import           Network.HTTP.Types
+import           Data.Default
 import           Database.Persist.Sql           ( SqlBackend
                                                 , SqlPersistT
                                                 , runMigration
